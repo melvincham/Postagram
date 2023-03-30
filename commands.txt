@@ -36,3 +36,6 @@ python manage.py migrate project_name migration_number --plan
 
 # run a server 
 python manage.py runserver
+
+#upen the Django shell
+python manage.py shell
