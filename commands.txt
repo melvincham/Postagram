@@ -1,0 +1,38 @@
+#install a virtual env
+py -m pip install --user virtualenv  
+
+#create a virtual env 
+py -m venv venv 
+
+# activate a virtual env
+.venv\Scripts\activate  
+
+# install programs specified in the req folder
+pip install -r requirements.txt  
+
+#create a new django project 
+django-admin startproject CoreRoot .   
+
+# create an app 
+python manage.py startapp app_name
+
+# create a migration file with out actually comiting to the database
+python manage.py makemigrations
+
+# show the sql that is returnd by the ORM for a migration 
+python manage.py sqlmigrate project_name migration_number
+
+# get a list of migrations that have occured 
+python manage.py showmigrations
+
+#perform a full migration 
+python manage.py migrate 
+
+#selecting a migration file to migrate
+python manage.py migrate project_name migration_number
+
+# determine if a migration is possible 
+python manage.py migrate project_name migration_number --plan 
+
+# run a server 
+python manage.py runserver
