@@ -39,3 +39,6 @@ python manage.py runserver
 
 #upen the Django shell
 python manage.py shell
+
+#install django rest framework
+pip install djangorestframework django-filter
