@@ -42,3 +42,9 @@ python manage.py shell
 
 #install django rest framework
 pip install djangorestframework django-filter
+
+#download pillow to use ImageField
+python -m pip install Pillow
+
+#download simplejwt to handle JWT authentication
+pip install djangorestframework-simplejwt 
