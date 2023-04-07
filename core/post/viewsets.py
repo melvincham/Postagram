@@ -43,3 +43,4 @@ class PostViewSet(AbstractViewSet):
           serializer = self.serializer_class(post)
           return Response(serializer.data,
                          status=status.HTTP_200_OK)
+          
