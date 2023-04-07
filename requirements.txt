@@ -5,3 +5,4 @@ django-filter==23.1
 pillow==9.4.0
 djangorestframework-simplejwt==5.2.2
 pyjwt==2.6.0
+django-extensions==3.2.1

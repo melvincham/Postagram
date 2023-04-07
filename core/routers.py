@@ -3,8 +3,14 @@ from core.user.viewsets import UserViewSet
 from core.auth.viewsets.register import RegisterViewSet 
 from core.auth.viewsets.login import LoginViewSet
 from core.auth.viewsets.refresh import RefreshViewSet
+from core.post.viewsets import PostViewSet
 
 router = routers.SimpleRouter()
+
+# ##################################################################### #
+# ################### POST                       ###################### #
+# ##################################################################### #
+router.register(r'post', PostViewSet, basename='post')
 
 # ##################################################################### #
 # ################### AUTH                       ###################### #
