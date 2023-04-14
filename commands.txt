@@ -37,8 +37,9 @@ python manage.py migrate project_name migration_number --plan
 # run a server 
 python manage.py runserver
 
-#upen the Django shell
+#open the Django shell
 python manage.py shell
+python manage.py shell_plus
 
 #install django rest framework
 pip install djangorestframework django-filter
@@ -48,3 +49,10 @@ python -m pip install Pillow
 
 #download simplejwt to handle JWT authentication
 pip install djangorestframework-simplejwt 
+
+#remove files from the repo that are currentlty in the gitignore
+git rm -r --cached .
+
+# install a library to facilitate the creation of routers with nested resources
+pip install drf-nested-routers
+
