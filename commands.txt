@@ -5,7 +5,7 @@ py -m pip install --user virtualenv
 py -m venv venv 
 
 # activate a virtual env
-.venv\Scripts\activate  
+venv\Scripts\activate  
 
 # install programs specified in the req folder
 pip install -r requirements.txt  
