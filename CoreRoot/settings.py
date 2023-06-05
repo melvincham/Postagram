@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'core.comment',
     'rest_framework',
     'rest_framework_simplejwt',
-    'django_extensions'
+    'django_extensions',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -55,6 +56,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = 'CoreRoot.urls'
@@ -145,3 +148,8 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
     'PAGE_SIZE': 10
 }
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000"
+]
