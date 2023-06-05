@@ -56,3 +56,6 @@ git rm -r --cached .
 # install a library to facilitate the creation of routers with nested resources
 pip install drf-nested-routers
 
+# craete a react application 
+yarn create react-app social-media-app
+
